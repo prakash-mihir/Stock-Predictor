@@ -70,6 +70,7 @@ hide_debug_info = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
+            .viewerBadge_container__1QSob {visibility: hidden;}
             </style>
             """
 st.markdown(hide_debug_info, unsafe_allow_html=True) 
