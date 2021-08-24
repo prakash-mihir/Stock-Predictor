@@ -62,3 +62,14 @@ st.plotly_chart(fig1)
 st.write("Forecast components")
 fig2 = m.plot_components(forecast)
 st.write(fig2)
+
+# hide stuff for production deployment.
+# Comment the following lines to enable debug 
+# mode for the dev build
+hide_debug_info = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_debug_info, unsafe_allow_html=True) 
