@@ -1,5 +1,5 @@
 streamlit
 yfinance
 plotly
-pystan<3
-prophet
+cython
+prophet>=1.1
