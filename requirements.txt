@@ -2,4 +2,4 @@ streamlit
 yfinance
 fbprophet
 plotly
-pystan==2.19.1.1
+pystan
