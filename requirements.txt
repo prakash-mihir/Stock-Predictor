@@ -3,3 +3,4 @@ yfinance
 plotly
 cython
 prophet>=1.1
+pandas
