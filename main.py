@@ -11,9 +11,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Forecast App')
 
-stocks = ('3IINFOTEC.NS', 
-'ADVANIHOT.NS', 
-'AICHAMP.NS', 
+stocks = ('ADVANIHOT.NS',  'AICHAMP.NS', 
 'ALLSEC.NS', 
 'ALPHAGEO.NS', 
 'ALPINEHOU.NS', 
