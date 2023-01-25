@@ -44,7 +44,7 @@ plot_raw_data()
 
 # Predict forecast with Prophet.
 df_train = data[['Date','Close']]
-df_train['Date'] = df_train['Date'].dt.tz_localize(None)
+df_train['Date'] = pd.to_datetime(df_train['Date'], format='%Y-%m-%d')
 df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
 
 m = Prophet()
