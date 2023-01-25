@@ -43,8 +43,8 @@ def plot_raw_data():
 plot_raw_data()
 
 # Predict forecast with Prophet.
-df_train = data[['Dates','Values']]
-df_train = df_train.rename(columns={"Dates": "ds", "Values": "y"})
+df_train = data[['Date','Close']]
+df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
 
 m = Prophet()
 m.fit(df_train)
