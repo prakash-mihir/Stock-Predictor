@@ -1,5 +1,5 @@
 import streamlit as st
-from datetime import date, datetime
+from datetime import date
 
 import yfinance as yf
 from prophet import Prophet
@@ -44,7 +44,8 @@ plot_raw_data()
 
 # Predict forecast with Prophet.
 df_train = data[['Date','Close']]
-df_train = df_train.rename(columns={"Date": "datetime", "Close": "y"})
+df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
+df_train['Date'] = df_train['Date'].dt.tz_localize(None)
 
 m = Prophet()
 m.fit(df_train)
