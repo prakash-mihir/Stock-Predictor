@@ -13,6 +13,8 @@ st.title('Stock Forecast App')
 
 stocks = ('RELIANCE.NS', 'IDFCFIRSTB.NS', 'SBIN.NS', 'ITC.NS', 'ZOMATO.NS', 'AWL.NS', 'ASIANPAINT.NS')
 selected_stock = st.selectbox('Select dataset for prediction', stocks)
+st.write('Or enter manually')
+selected_stock = st.text_input('Enter the stock symbol:', 'GOOG')
 
 n_years = st.slider('Years of prediction:', 1, 4)
 period = n_years * 365
